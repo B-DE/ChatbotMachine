@@ -51,11 +51,13 @@ function greet() {
 }
 
 function onClickAsEnter(e) {
-    if (e.keyCode === 13)
-        onSendButtonClicked();
+    if (e.keyCode === 13) {
+        onSendButtonClicked()
+    }
 }
 
 function setUserName(username) {
+
     if (username != null && username.replace(" ", "" !== "")) {
         setTimeout(function () {
             return sendMessage("반갑습니다." + username + "님. 닉네임이 설정되었습니다.", 'left');

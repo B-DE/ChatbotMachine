@@ -4,7 +4,7 @@ import torch
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import LinearSVC
 
-root_dir = "/Users/gimjin/Downloads/kochat-master/demo"
+root_dir = os.path.abspath(os.curdir)
 # 만약 로딩이 안된다면 root_dir을 직접 적어주세요.
 # 데모 기준에서 OS별 root path는 아래와 같이 적으면 됩니다.
 # windows : C:Users/yourname/yourdirectory/kochat/demo
