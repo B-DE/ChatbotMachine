@@ -10,13 +10,15 @@ import re
 import numpy as np
 import pandas as pd
 import six
-from matplotlib import pyplot as plt
 from pandas import DataFrame
 from sklearn.decomposition import IncrementalPCA
 from torch import Tensor
-
 from kochat.decorators import backend
 
+# gui 오류에 대한 코드
+import matplotlib
+matplotlib.use('Agg')
+from matplotlib import pyplot as plt
 
 @backend
 class Visualizer:

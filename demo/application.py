@@ -15,6 +15,10 @@ from kochat.proc import DistanceClassifier, GensimEmbedder, EntityRecognizer, So
 from scenarios import restaurant, travel, dust, weather
 # 에러 나면 이걸로 실행해보세요!
 
+# gui 오류에 대한 코드
+import matplotlib
+matplotlib.use('Agg')
+
 
 dataset = Dataset(ood=True)
 emb = GensimEmbedder(model=embed.FastText())
